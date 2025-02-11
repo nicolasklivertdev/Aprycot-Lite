@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    background-color: rgb(255, 247, 237);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 233px 150px;
+    max-width: 1920px;
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 459px;
+}
+
+.sign-in2 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 459px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    width: 185px;
+}
+
+.sign-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.title-subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.title-subtitle h1 {
+    font-family: 'Playfair display';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+}
+
+.title-subtitle p {
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #959895;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Email, .Password {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 436px;
+}
+
+.Email p, .Password p {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #959895;
+}
+
+#email, #password {
+    padding: 8px 16px;
+    border: 1px solid #EA6A12;
+    border-radius: 24px;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 166px;
+}
+
+.remember-me {
+    display: flex;
+    gap: 8px;
+}
+
+.remember-me p {
+    white-space: nowrap;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #959895;
+}
+
+.remember a {
+    white-space: nowrap;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #EA6A12;
+}
+
+button {
+    justify-content: center;
+    padding: 8px 24px;
+    border-radius: 24px;
+    max-width: 188px;
+    width: 100%;
+    background-color: #EA6A12;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.sign-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 374px;
+}
+
+.sign-footer p {
+    flex-wrap: nowrap;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.sign-up {
+    display: flex;
+    gap: 3px;
+}
+
+.sign-up span {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #EA6A12;
+}
+
+.sign-up span:hover {
+    cursor: pointer;
+}
+
+.food-imgs {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.food-group {
+    position: absolute;
+    right: 40px;
+}
+
+.food-icon {
+    position: absolute;
+    right: 454px;
+    bottom: -150px;
+    width: 386px;
+}
+
+@media screen and (max-width: 1280px) {
+    .remember {
+        gap: 80px;
+    }
+
+    .remember-me p, .remember a {
+        white-space: wrap;
+    }
+
+    .food-group {
+        position: absolute;
+        right: -40px;
+        max-width: 500px;
+        height: auto;
+    }
+    
+    .food-icon {
+        position: absolute;
+        right: 217px;
+        bottom: 15px;
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .container {
+        padding: 75px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .food-group {
+        display: flex;
+        position: relative;
+        right: 0px;
+        max-width: 500px;
+        height: auto;
+    }
+    
+    .food-icon {
+        position: absolute;
+        right: 255px;
+        bottom: -40px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .container {
+        padding: 37.5px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .food-group {
+        display: flex;
+        position: relative;
+        right: 0px;
+        max-width: 400px;
+        height: auto;
+    }
+    
+    .food-icon {
+        position: absolute;
+        right: 225px;
+        bottom: -40px;
+        width: 160px;
+    }
+}
