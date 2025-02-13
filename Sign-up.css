@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    background-color: rgb(255, 247, 237);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 197px 149px;
+    max-width: 1920px;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 519px;
+}
+
+.logo-img {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img img {
+    max-width: 185px;
+}
+
+.sign-up-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.title-subtitle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+}
+
+.title-subtitle h1 {
+    font-family: 'Playfair display';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+}
+
+.title-subtitle p {
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #959895;
+}
+
+.sign-up-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.name, .gmail, .pass {
+    display: flex;
+    gap: 16px;
+}
+
+.first-name, .last-name, .email, .phone-number, .password, .confirm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.first-name p, .last-name p, .email p, .phone-number p, .password p, .confirm p {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #959895;
+}
+
+.first-name input, .last-name input, .email input, .phone-number input, .password input, .confirm input {
+    padding: 8px 16px;
+    border: 1px solid #EA6A12;
+    border-radius: 24px;
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+
+.agreement {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.agreement p {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #959895;
+}
+
+button {
+    padding: 8px 24px;
+    border-radius: 24px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 188px;
+    width: 100%;
+    background-color: #EA6A12;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.sign-up-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.sign-up-footer p {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.sign-in {
+    display: flex;
+    gap: 4px;
+}
+
+.sign-in span {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #EA6A12;
+}
+
+.sign-in span:hover {
+    cursor: pointer;
+}
+
+.food-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-group2 {
+    width: 80%;
+}
+
+.food-icon2 {
+    width: 38%;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1707px) {
+    .container {
+        padding: 98.5px 74.5px;
+        gap: 100px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        padding: 98.5px 74.5px;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .container {
+        padding: 49.25px;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 1135px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name, .gmail, .pass {
+        justify-content: center;
+    }
+
+    .first-name input, .last-name input, .email input, .phone-number input, .password input, .confirm input {
+        width: 85%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 24.625px;
+    }
+
+    .first-name p, .last-name p, .email p, .phone-number p, .password p, .confirm p {
+        white-space: nowrap;
+    }
+
+    .first-name input, .last-name input, .email input, .phone-number input, .password input, .confirm input {
+        width: 80%;
+    }
+
+    .food-group2 {
+        width: 100%;
+    }
+    
+    .food-icon2 {
+        width: 45%;
+    }
+}
