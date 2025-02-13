@@ -172,7 +172,7 @@ button:hover {
     gap: 3px;
 }
 
-.sign-up span {
+.sign-up a {
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 400;
@@ -180,7 +180,7 @@ button:hover {
     color: #EA6A12;
 }
 
-.sign-up span:hover {
+.sign-up a:hover {
     cursor: pointer;
 }
 
