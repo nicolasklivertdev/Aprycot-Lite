@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    background-color: rgb(255, 247, 237);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 321px 151px;
+    gap: 60px;
+    max-width: 1920px;
+}
+
+.Email {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 540px;
+}
+
+.logo-img img {
+    max-width: 185px;
+}
+
+.success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.success-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.success-top img {
+    max-width: 86px;
+}
+
+.success-top h1 {
+    font-family: 'Playfair display';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+}
+
+.success-top p {
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #959895;
+}
+
+a {
+    padding: 8px 24px;
+    border-radius: 24px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 188px;
+    background-color: #EA6A12;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.dishes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.dishes img {
+    width: 30%;
+}
+
+@media screen and (max-width: 1440px) {
+    .container {
+        padding: 160.5px 75.5px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        padding: 80.25px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 40.125px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dishes {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .dishes {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 27px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .dishes {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
